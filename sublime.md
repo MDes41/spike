@@ -14,6 +14,18 @@ http://www.sublimetext.com/
 download sublime text 3 move it to application and open the once.
 
 
+###Install the command line tools
+
+For reference look here, 
+
+https://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
+
+type this command on the same line
+
+```
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+```
+
 ###Next install Package controll
 
 The simplest method of installation is through the Sublime Text console. The console is accessed via the ctrl+` shortcut or the View > Show Console menu. Once open, paste the appropriate Python code for your version of Sublime Text into the console.
@@ -36,15 +48,15 @@ https://packagecontrol.io/browse/popular
 
 	Clone the repository and symlink file to Sublime's User Directory:
 
-	###OS X
+###OS X
 
- 	``` 
+ 	```
  	git clone git@github.com:eddorre/SublimeERB.git ~/.sublime_erb
 
 	ln -fs ~/.sublime_erb/ ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/SublimeERB
 	```
 
-	###Add Keybinding
+###Add Keybinding
 
 Open your User Keybinding File and add the following keybinding to activate the toggle command in all file types:
 
